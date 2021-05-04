@@ -4,6 +4,28 @@ $contentWidthText: 40rem;
 $spacing: 3rem;
 $wrapperSpacing: 3rem;
 
+@font-face {
+  font-family: 'GT America Mono';
+  src: url('../../media/GT-America-Mono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT America Expanded';
+  src: url('../../media/GT-America-Expanded-Black.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @mixin fontDefault() {
-  font-family: sans-serif;
+  font-family: 'GT America Mono', sans-serif;
+}
+
+@mixin fontTitle() {
+  font-family: 'GT America Expanded', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
