@@ -17,7 +17,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tytuł</title>
+  <title>MVU</title>
   <link rel="icon" type="image/png" href="./media/favicon.png" />
   <meta property="og:url" content="<?=CURRENT_URL?>" />
   <meta property="og:type" content="website" />
