@@ -38,9 +38,20 @@
         max-width: 25em;
         margin: 0 auto;
         border-radius: 3em 3em;
+        transition: background-color 0.3s, color 0.3s;
 
         &:focus {
           outline: none;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: #fff;
+          color: #000;
+
+          & + .placeholder {
+            color: #000;
+          }
         }
 
         @media (max-width: 768px) {
