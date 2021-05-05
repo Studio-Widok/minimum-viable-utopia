@@ -21,8 +21,7 @@
   <link rel="icon" type="image/png" href="./media/favicon.png" />
   <meta property="og:url" content="<?=CURRENT_URL?>" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="tytuł" />
-  <meta property="og:description" content="opis" />
+  <meta property="og:title" content="minimum viable utopia" />
   <meta property="og:image" content="<?=BASE_URL?>/media/ogimg.png" />
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
