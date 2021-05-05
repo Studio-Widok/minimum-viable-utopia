@@ -56,7 +56,7 @@
     <img id="logo" src='./media/logo.png' />
     <a id="twitter" href="https://twitter.com/mv_utopia" target="_blank"><img
         src="./media/twitter.png" alt="" /></a>
-    <div id="container-time">czas</div>
+    <div id="container-time"></div>
   </div>
   <div id="container-links" class="col2">
     <div id="newsletter" class="container-link">

@@ -34,8 +34,20 @@ body {
 
     #container-time {
       position: absolute;
-      bottom: 1em;
-      left: 1em;
+      bottom: 1.5em;
+      left: 1.5em;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background-color: #ee8633;
+        margin-right: 1em;
+      }
     }
 
     #logo {
