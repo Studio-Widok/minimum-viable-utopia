@@ -179,6 +179,10 @@ body {
       text-transform: uppercase;
       margin-left: auto;
       cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
