@@ -1,8 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-// const mode = 'production';
-const mode = 'development';
+const mode = 'production';
+// const mode = 'development';
 
 module.exports = {
   mode,
@@ -23,7 +23,10 @@ module.exports = {
               publicPath: './',
             },
           },
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: { url: false },
+          },
           {
             loader: 'postcss-loader',
             options: {
