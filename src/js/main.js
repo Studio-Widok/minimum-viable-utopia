@@ -15,8 +15,8 @@ input.on({
 const padLeft = input => ('00' + input).slice(-2);
 
 const time = new Date();
-let timeString = padLeft(time.getDay());
-timeString += '/' + padLeft(time.getMonth());
+let timeString = padLeft(time.getDate());
+timeString += '/' + padLeft(time.getMonth() + 1);
 timeString += '/' + time.getFullYear();
 timeString += '/' + padLeft(time.getHours());
 timeString += ':' + padLeft(time.getMinutes());
