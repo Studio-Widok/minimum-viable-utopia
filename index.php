@@ -61,7 +61,7 @@
   <div id="container-links" class="col2">
     <div id="newsletter" class="container-link">
       <form action="">
-        <div class="link-title--uppercase">newsletter</div>
+        <div class="links-title--uppercase">newsletter</div>
         <div class="input-wrap">
           <input type="text" id="newsletter-input">
           <div class="placeholder">newsletter<span>_</span></div>
