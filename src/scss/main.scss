@@ -125,6 +125,10 @@ body {
           grid-column: 1 / 4;
           border-left: none;
         }
+
+        .link-text {
+          font-size: 1.2em;
+        }
       }
 
       @media (max-width: 450px) {
