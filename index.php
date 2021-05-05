@@ -53,7 +53,7 @@
 ?>
 <div id="container-out" class="flex flex-1050">
   <div id="container-main" class="col2">
-    <img id="logo" src='./media/logo.png' />
+    <img id="logo" src='./media/logo.svg' />
     <a id="twitter" href="https://twitter.com/mv_utopia" target="_blank"><img
         src="./media/twitter.png" alt="" /></a>
     <div id="container-time"></div>
