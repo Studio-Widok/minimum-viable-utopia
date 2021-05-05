@@ -38,6 +38,10 @@
         &:focus {
           outline: none;
         }
+
+        @media (max-width: 768px) {
+          padding: 1em 0.5em;
+        }
       }
 
       .placeholder {
@@ -69,6 +73,7 @@
       font: inherit;
       @include fontTitle();
       text-transform: uppercase;
+      margin-top: 0.75em;
       margin-left: auto;
       cursor: pointer;
 

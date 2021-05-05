@@ -129,8 +129,6 @@
 @include mobile-basic(1050);
 @include mobile-basic(900);
 @include mobile-basic(768);
-@include mobile-basic(600);
-@include mobile-basic(450);
 
 @media (max-width: 768px) {
   body {
@@ -165,5 +163,11 @@
   }
   .column-double {
     padding: 0 4em;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 0.8em;
   }
 }
