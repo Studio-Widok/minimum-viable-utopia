@@ -1,4 +1,5 @@
 import $ from 'cash-dom';
+import widok from 'widok';
 
 const placeholder = $('.placeholder');
 const input = $('#newsletter-input');
