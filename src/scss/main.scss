@@ -72,17 +72,13 @@ body {
   #container-links {
     display: grid;
     grid-template-columns: repeat(3, 33.333%);
-    grid-template-rows: repeat(3, 33.333%);
+    grid-auto-rows: 1fr;
     min-width: 35em;
     min-height: 40em;
 
-    @media (max-width: 1050px) {
-      min-width: auto;
-    }
-
     .container-link {
       border-left: 2px solid #fff;
-      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff;
       padding: 1.5em;
 
       &:nth-last-child(-n + 3) {
@@ -111,13 +107,24 @@ body {
         }
       }
 
-      @media (max-width: 1050px) {
+      @media (min-width: 1050px) {
         &:nth-child(-n + 2) {
-          border-top: 2px solid #fff;
+          border-top: none;
         }
+      }
+
+      @media (max-width: 1050px) {
+        min-width: auto;
 
         &:nth-child(3n),
         &:first-child {
+          border-left: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        &:nth-child(n + 3) {
+          grid-column: 1 / 4;
           border-left: none;
         }
       }
