@@ -2,11 +2,11 @@
 
 body {
   @include fontDefault();
-
   margin: 0;
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
   color: #fff;
+  background-image: url('../media/bg.jpg');
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: 1600px) {
     font-size: 1.2em;
@@ -16,19 +16,17 @@ body {
 #container-out {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
-  background-image: url('../media/bg.jpg');
-  background-position: center;
-  background-size: cover;
+  transition: min-height 0.3s;
 
   #container-main {
     flex-grow: 1;
     display: flex;
     position: relative;
+    transition: min-height 0.3s;
 
     @media (max-width: 1050px) {
       min-height: 60vh;
-      min-height: calc(var(--vh, 1vh) * 100 - 13em);
+      min-height: max(calc(var(--vh, 1vh) * 100 - 13em), 20em);
     }
 
     #twitter {
