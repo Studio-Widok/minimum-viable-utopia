@@ -41,7 +41,16 @@
     <div id="container-time">czas</div>
   </div>
   <div id="container-links" class="col2">
-    <div id="newsletter" class="container-link">news</div>
+    <div id="newsletter" class="container-link">
+      <form action="">
+        <div class="link-title--uppercase">newsletter</div>
+        <div class="input-wrap">
+          <input type="text" id="newsletter-input">
+          <div class="placeholder">newsletter<span>_</span></div>
+        </div>
+        <button class="newsletter-button">zapisz się</button>
+      </form>
+    </div>
     <div class="container-link">
       <a href="<?=$link['url']?>">
         <div class="link-title">powered by <br /></div>
