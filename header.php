@@ -9,6 +9,11 @@
     "CURRENT_URL", (IS_SSL_ENABLED ? "https" : "http") . "://" .
     $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']
   );
+
+  $use_empty_bg = true;
+  $backgrounds  = array_values(array_diff(scandir(__DIR__ . '/media/backgrounds'), ['.', '..']));
+  if ($use_empty_bg) {$backgrounds[] = '';}
+  $current_bg_id = rand(0, count($backgrounds) - 1);
 ?>
 
 <!DOCTYPE html>
@@ -28,4 +33,11 @@
   <link rel="stylesheet" href="./dist/main.css" />
 </head>
 
-<body>
+<?php
+  $bg_style = '';
+  if (!empty($backgrounds[$current_bg_id])) {
+    $bg_style = "background-image: url('" . BASE_URL . "/media/backgrounds/" . $backgrounds[$current_bg_id] . "');";
+  }
+?>
+
+<body style="<?=$bg_style?>">
