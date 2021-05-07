@@ -61,13 +61,15 @@
   </div>
   <div id="container-links" class="col2">
     <div id="newsletter" class="container-link">
-      <form action="">
+      <form action="https://www.getrevue.co/profile/mvu/add_subscriber"
+        method="post" name="revue-form" target="_blank">
         <div class="links-title--uppercase">newsletter</div>
         <div class="input-wrap">
-          <input type="text" id="newsletter-input">
+          <input type="email" id="newsletter-input" name="member[email]">
           <div class="placeholder">newsletter<span>_</span></div>
         </div>
-        <button class="newsletter-button">zapisz się</button>
+        <button class="newsletter-button" name="member[subscribe]">zapisz
+          się</button>
       </form>
     </div>
     <div class="container-link">
